@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Explore our comprehensive business insurance options, including Marine Cargo, Work Injury Compensation, and more. Contact us for quotes and details." />
+    <meta name="keywords" content="business insurance, Marine Cargo, Work Injury Compensation, Business Packages, Foreign Workers Medical Insurance, Employee Benefits, Foreign Worker Bonds" />
+    <meta name="author" content="KCB Agency" />
+    <title>Business Insurance Options - KCB Agency</title>
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <style>
+      body {
+        position: relative;
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+      }
+      
+      body::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url('img/plantbg.jpg') !important;
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        opacity: 0.5;
+        z-index: -1;
+      }
+      
+      .container-near-footer {
+        margin-bottom: 50px !important;
+      }
+      
+      .container-near-footer h1 {
+        text-align: center;
+        padding-bottom: 20px;
+        font-family: 'Math Bold', cursive; /* Example script font; replace with actual font if needed */
+        font-weight: bold;
+        color: black;
+        font-size: 3.5em;
+        text-shadow: 
+          -1px -1px 0 whitesmoke,  
+           1px -1px 0 whitesmoke,
+          -1px  1px 0 whitesmoke,
+           1px  1px 0 whitesmoke;
+      }
+      
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(30px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      
+      .insurance-row {
+        border: 5px solid #ccc;
+        background-color: white;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        padding: 20px;
+        margin-bottom: 50px;
+        display: flex;
+        align-items: stretch;
+        overflow: hidden;
+        opacity: 0;
+        transform: translateY(30px);
+        border-radius: 5px;
+      }
+      
+      .insurance-row:hover {
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8);
+      }
+      
+      .insurance-row img {
+        border-radius: 15px;
+        flex: 1;
+        width: 50%;
+        height: 100%;
+        object-fit: contain;
+        padding: 10px;
+        box-sizing: border-box;
+      }
+      
+      .insurance-row .text {
+        flex: 1;
+        width: 50%;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: left;
+      }
+      
+      .insurance-row:nth-child(even) {
+        flex-direction: row-reverse;
+      }
+      
+      .insurance-row:nth-child(odd) {
+        flex-direction: row;
+      }
+      
+      .insurance-row h3 {
+        margin-top: 0;
+      }
+      
+      .btn-primary {
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        border-radius: 5px;
+        font-size: 16px;
+        margin-top: 20px;
+      }
+      
+      .btn-primary:hover {
+        background-color: #0056b3;
+      }
+      
+      @media (max-width: 768px) {
+        .insurance-row {
+          flex-direction: column !important;
+          align-items: center !important;
+        }
+
+        .insurance-row img {
+          width: 100% !important;
+          height: auto !important;
+          padding: 0 !important;
+        }
+
+        .insurance-row .text {
+          width: 100% !important;
+          padding: 20px !important;
+          text-align: center !important;
+        }
+
+        .insurance-row:nth-child(even) {
+          flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">KCB Agency</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="insurance.html">Personal Insurance</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="business.html">Business Insurance</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="claims.html">Claims</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container mt-5 container-near-footer">
+      <h1><b>Business Insurance</b></h1>
+
+      <div id="marine-cargo" class="insurance-row">
+        <img src="img/marinecargoInsurance.jpg" alt="Marine Cargo Insurance: Ship your goods worldwide with comprehensive coverage" />
+        <div class="text">
+          <h3>MARINE CARGO INSURANCE</h3>
+          <p>
+            Ship your goods anywhere throughout the world and enjoy peace of mind.
+            Comprehensive insurance coverage for all stages of the distribution chain.
+            <br><a href="contact.html" 
+            class="btn btn-primary" 
+            target="_blank">Contact Us For Quotation</a>
+          </p>
+        </div>
+      </div>
+      
+      <div id="work-injury" class="insurance-row">
+        <img src="img/workInjury.jpg" alt="Work Injury Compensation: Protect against legal liabilities for employee injuries or deaths" />
+        <div class="text">
+          <h3>WORK INJURY COMPENSATION</h3>
+          <p>
+            Designed to protect you from legal liabilities, should your employees suffer personal injury/death by accident arising out of and during the course of employment.
+            <br><a href="contact.html" 
+            class="btn btn-primary" 
+            target="_blank">Contact Us For Quotation</a>
+          </p>
+        </div>
+      </div>
+      
+      <div id="business-packages" class="insurance-row">
+        <img src="img/businessPackages.jpg" alt="Business Packages: Tailored insurance plans for SMEs including Office, Retail, Service, and Light Industrial" />
+        <div class="text">
+          <h3>BUSINESS PACKAGES</h3>
+          <p>
+            Specially tailored to our SMEs. Choose from 5 comprehensive plans:
+            Office, Retail, Service, Food & Beverage, Light Industrial.
+            <br><a href="contact.html" 
+            class="btn btn-primary" 
+            target="_blank">Contact Us For Quotation</a>
+          </p>
+        </div>
+      </div>
+      
+      <div id="foreign-workers-medical" class="insurance-row">
+        <img src="img/foreignWorkersMedical.jpg" alt="Foreign Workers' Medical Insurance: Coverage for Work Permits & S Pass holders as required by MOM" />
+        <div class="text">
+          <h3>FOREIGN WORKERS' MEDICAL INSURANCE</h3>
+          <p>
+            Provide the necessary coverage for your foreign workers (Work Permits & S Pass holders) - as required by MOM.
+            <br><a href="contact.html" 
+            class="btn btn-primary" 
+            target="_blank">Contact Us For Quotation</a>
+          </p>
+        </div>
+      </div>
+      
+      <div id="employee-benefits" class="insurance-row">
+        <img src="img/employeeBenefits.jpg" alt="Employee Benefits Package: Affordable protection plans for employees with flexible options" />
+        <div class="text">
+          <h3>EMPLOYEE BENEFITS PACKAGE</h3>
+          <p>
+            Give your employees the additional protection they deserve. Easy application from as few as two employees. Wide range of affordable plans/riders for your selection.
+            <br><a href="contact.html" 
+            class="btn btn-primary" 
+            target="_blank">Contact Us For Quotation</a>
+          </p>
+        </div>
+      </div>
+      
+      <div id="foreign-worker-bonds" class="insurance-row">
+        <img src="img/foreignWorkerBonds.jpg" alt="Foreign Worker Bonds: Security deposit solutions for non-Malaysia foreign workers as regulated by MOM" />
+        <div class="text">
+          <h3>FOREIGN WORKER BONDS</h3>
+          <p>
+            Employers need a security deposit or cash deposit of S$5,000 for every non-Malaysia foreign worker as regulated by MOM. With our Foreign Worker Bonds, you do not need to place the security deposit upfront.
+            <br><a href="contact.html" 
+            class="btn btn-primary" 
+            target="_blank">Contact Us For Quotation</a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <p>&copy; 2024 KCB Agency | All Rights Reserved</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const rows = document.querySelectorAll(".insurance-row");
+
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.style.animation = "fadeInUp 0.8s ease forwards";
+            }
+          });
+        }, {
+          threshold: 0.1
+        });
+
+        rows.forEach(row => {
+          observer.observe(row);
+        });
+      });
+    </script>
+  </body>
+</html>

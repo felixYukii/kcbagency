@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="KCB Agency offers a wide range of insurance solutions including auto, domestic maid, worker's security bond, health, marine cargo, and business packages. Contact us for reliable insurance services.">
+    <meta name="keywords" content="Insurance, Auto Insurance, Domestic Maid Insurance, Worker's Security Bond, Health Insurance, Marine Cargo Insurance, Business Packages, KCB Agency, Income Insurance, QBE Insurance, China TaiPing Insurance">
+    <meta name="author" content="KCB Agency">
+    <title>KCB Agency - Comprehensive Insurance Solutions</title>
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
+    <style>
+        .info-card {
+            opacity: 0;
+        }
+        .text-card {
+            opacity: 0;
+        }
+        .card.animated, .text-card.animated {
+            animation: fadeInUp 0.8s ease forwards;
+        }
+        .info-card.animated {
+            animation: fadeInLeft 0.8s ease forwards;
+        }
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @keyframes fadeInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">KCB Agency</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="insurance.html">Personal Insurance</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="business.html">Business Insurance</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="claims.html">Claims</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="background-container">
+        <div class="insurance-section">
+            <h1>Get the <span class="highlight">Insurance</span> You Need</h1>
+            <p>Your local partner providing various insurance solutions for you.</p>
+        </div>
+        
+        <div class="container text-center my-5 insurance-cards-container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <a href="insurance.html#motor" class="card-link" target="_blank">
+                        <div class="card insurance-card">
+                            <img src="img/car.png" alt="Auto Insurance Coverage for Vehicles" class="card-img-top icon">
+                            <div class="card-body">
+                                <h3 class="card-title">Auto Insurance</h3>
+                                <p class="card-text">Comprehensive coverage to protect your vehicle from unforeseen events.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <a href="insurance.html#domestic-maid" class="card-link" target="_blank">
+                        <div class="card insurance-card">
+                            <img src="img/maid.png" alt="Domestic Maid Insurance for Helpers" class="card-img-top icon">
+                            <div class="card-body">
+                                <h3 class="card-title">Domestic Maid</h3>
+                                <p class="card-text">Specialized insurance for domestic helpers and maids, ensuring their well-being.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <a href="business.html#foreign-worker-bonds" class="card-link" target="_blank" >
+                        <div class="card insurance-card">
+                            <img src="img/worker.png" alt="Worker's Security Bond Protection" class="card-img-top icon">
+                            <div class="card-body">
+                                <h3 class="card-title">Worker's Security Bond</h3>
+                                <p class="card-text">Ensure protection and compliance for workers with comprehensive security bonds.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <a href="business.html#foreign-workers-medical" class="card-link" target="_blank" >
+                        <div class="card insurance-card">
+                            <img src="img/health.png" alt="Health Insurance for Medical Expenses" class="card-img-top icon">
+                            <div class="card-body">
+                                <h3 class="card-title">Health Insurance</h3>
+                                <p class="card-text">Coverage for medical expenses to ensure the health of you and your workers.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <a href="business.html#marine-cargo" class="card-link" target="_blank" >
+                        <div class="card insurance-card">
+                            <img src="img/cargo.png" alt="Marine Cargo Insurance During Transit" class="card-img-top icon">
+                            <div class="card-body">
+                                <h3 class="card-title">Marine Cargo</h3>
+                                <p class="card-text">Protection for cargo during transit, safeguarding your goods.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <a href="business.html#business-packages" class="card-link" target="_blank" >
+                        <div class="card insurance-card">
+                            <img src="img/other.png" alt="Business Packages Insurance Solutions" class="card-img-top icon">
+                            <div class="card-body">
+                                <h3 class="card-title">and More...</h3>
+                                <p class="card-text">Explore various business insurance packages tailored to your needs.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="about" class="container-fluid">
+        <div class="about-section">
+            <h2>About KCB Agency</h2>
+    
+            <div class="row mb-4">
+                <div class="col-md-12">
+                    <div class="text-card bg-light-green">
+                        <h3>Your Trusted Local Business</h3>
+                        <p>With over 30 years of experience, KCB Agency has built a reputation for reliability and stability in the insurance industry. Our extensive knowledge and expertise enable us to meet the evolving needs of our clients with tailored solutions and personalized service.</p>
+                        <br>
+                        <p>We focus on understanding each client's specific needs and delivering customized solutions with attention and care. Our commitment to being responsive and approachable ensures that every client receives the best possible service.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mb-4">
+                <div class="col-md-12">
+                    <div class="text-card bg-medium-green">
+                        <h3>Registered with the General Insurance Association of Singapore (GIA)</h3>
+                        <p>The General Insurance Association of Singapore (GIA) represents general insurance companies and promotes industry standards. GIA engages in public education, advocates for the industry, and collaborates with regulators to ensure growth and integrity. <br><br> GIA No: C002825</p>                    
+                    </div>
+                </div>
+            </div>
+
+            <h2>Insurance Companies We Partner With To Provide The <i class="gradient-text">Best Deals</i></h2>
+    
+            <div class="card-container">
+                <div class="card info-card bg-lighter-green col-12 col-md-6 col-lg-4">
+                    <div class="card-body">
+                        <h3>Income</h3>
+                        <img src="img/income.jpg" alt="Income Insurance logo" class="card-img">
+                        <p>Income Insurance Limited offers comprehensive life, health, and general insurance in Singapore. Established in 1970, Income focuses on protecting and enhancing the lives of individuals, families, and businesses with innovative financial solutions.</p>
+                    </div>
+                </div>
+                <div class="card info-card bg-lighter-green col-12 col-md-6 col-lg-4">
+                    <div class="card-body">
+                        <h3>China Taiping</h3>
+                        <img src="img/ChineTaiPing.png" alt="China Taiping Insurance logo" class="card-img">
+                        <p>China Taiping Insurance (Singapore) Pte. Ltd. provides a wide range of life and general insurance solutions. With a strong financial rating and over 85 years in Singapore, China Taiping offers dependable financial protection and growth opportunities for customers.</p>
+                    </div>
+                </div>
+                <div class="card info-card bg-lighter-green col-12 col-md-6 col-lg-4">
+                    <div class="card-body">
+                        <h3>QBE</h3>
+                        <img src="img/QBE.png" alt="QBE Insurance logo" class="card-img">
+                        <p>QBE Insurance (Singapore) Pte Ltd, established in 1891, provides specialized general insurance and reinsurance services. As a member of the global QBE Insurance Group, it offers expert coverage tailored to both complex and straightforward risks.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer class="footer">
+        <p>&copy; 2024 KCB Agency | All Rights Reserved</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const cards = document.querySelectorAll('.card');
+            const textCards = document.querySelectorAll('.text-card');
+            const infoCards = document.querySelectorAll('.info-card');
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.1
+            };
+
+            const observer = new IntersectionObserver(function(entries) {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('animated');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            cards.forEach(card => {
+                observer.observe(card);
+            });
+
+            textCards.forEach(textCard => {
+                observer.observe(textCard);
+            });
+
+            infoCards.forEach(infoCard => {
+                observer.observe(infoCard);
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Insurance Options</title>
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Explore our range of personal insurance options including motor, home, travel, personal accident, domestic maid, and overseas student protection coverage. Get the best insurance deals for your needs." />
+    <meta name="keywords" content="Insurance, car insurance, Motor Insurance, Home Insurance, Travel Insurance, Personal Accident Insurance, Domestic Maid Insurance, Overseas Student Protection, KCB Agency" />
+    <meta name="author" content="KCB Agency" />
+    
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <style>
+        body {
+          position: relative;
+          margin: 0;
+          padding: 0;
+          font-family: Arial, sans-serif;
+        }
+        
+        body::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-image: url('img/plantbg.jpg') !important;
+          background-size: cover;
+          background-position: center center;
+          background-repeat: no-repeat;
+          opacity: 0.5; /* Set the opacity of the background image */
+          z-index: -1; /* Ensure the background image is behind the content */
+        }
+        
+        .container-near-footer {
+          margin-bottom: 50px !important;
+        }
+        
+        .container-near-footer h1 {
+        text-align: center;
+        padding-bottom: 20px;
+        font-family: 'Math Bold', cursive; /* Example script font; replace with actual font if needed */
+        font-weight: bold;
+        color: black;
+        font-size: 3.5em;
+        text-shadow: 
+          -1px -1px 0 whitesmoke,  
+           1px -1px 0 whitesmoke,
+          -1px  1px 0 whitesmoke,
+           1px  1px 0 whitesmoke;
+      }
+      
+        
+        @keyframes fadeInUp {
+          from {
+            opacity: 0;
+            transform: translateY(30px);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+
+        .insurance-row {
+          border: 5px solid #ccc; /* Add border */
+          background-color: white;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+          padding: 20px;
+          margin-bottom: 50px;
+          display: flex;
+          align-items: stretch;
+          overflow: hidden;
+          opacity: 0; /* Start with the row invisible */
+          transform: translateY(30px);
+          border-radius: 5px; /* Rounds the corners of the box */
+        }
+        
+        .insurance-row:hover {
+          box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8);
+        }
+        
+        .insurance-row img {
+          border-radius: 15px;
+          flex: 1;
+          width: 50%;
+          height: 100%;
+          object-fit: contain; /* Ensures the full image is shown */
+          padding: 10px; /* Adds whitespace around the image */
+          box-sizing: border-box; /* Ensures padding doesn't affect the overall size */
+        }
+        
+        .insurance-row .text {
+          flex: 1;
+          width: 50%;
+          padding: 20px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          text-align: left;
+        }
+        
+        .insurance-row:nth-child(even) {
+          flex-direction: row-reverse; /* Reverse direction for even rows */
+        }
+        
+        .insurance-row:nth-child(odd) {
+          flex-direction: row; /* Default direction for odd rows */
+        }
+        
+        .insurance-row h3 {
+          margin-top: 0;
+        }
+        
+        .btn-primary {
+          background-color: #007bff; /* Bootstrap primary color */
+          color: #fff;
+          border: none;
+          padding: 10px 20px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          border-radius: 5px;
+          font-size: 16px;
+          margin-top: 20px; /* Space above the button */
+        }
+        
+        .btn-primary:hover {
+          background-color: #0056b3; /* Darker shade for hover effect */
+        }
+
+        @media (max-width: 768px) {
+          .insurance-row {
+            flex-direction: column !important ; /* Stack text and image vertically on mobile */
+            align-items: center !important ; /* Center-align content */
+          }
+
+          .insurance-row img {
+            width: 100% !important ; /* Ensure image takes full width on mobile */
+            height: auto !important ; /* Maintain aspect ratio */
+            padding: 0 !important ; /* Remove padding to fit the width */
+          }
+
+          .insurance-row .text {
+            width: 100% !important ; /* Ensure text takes full width on mobile */
+            padding: 20px !important ; /* Maintain padding around the text */
+            text-align: center !important ; /* Center-align text */
+          }
+
+          .insurance-row:nth-child(even) {
+            flex-direction: column; /* Stack content vertically for even rows */
+          }
+        }
+    </style>
+        
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">KCB Agency</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="insurance.html"
+                >Personal Insurance</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="business.html">Business Insurance</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="claims.html">Claims</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container mt-5 container-near-footer">
+        <h1><b>Personal Insurance</b></h1>
+      <div id="motor-insurance" class="insurance-row">
+        <img src="img/carInsurance3.jpg" alt="Car Insurance showing vechicle" />
+        <div class="text">
+          <h3>MOTOR INSURANCE</h3>
+          <p>
+            Covers various vehicle types including private cars, commercial
+            vehicles, motor cycles, private hire usage, and fleet insurance.
+            <br><a href="contact.html" 
+            class="btn btn-primary" 
+            target="_blank">Contact Us For Quotation</a>
+          </p>
+        </div>
+      </div>
+      <div id="home-insurance" class="insurance-row">
+        <img src="img/house.jpg" alt="Home Insurance depicting a house in Singapore" />
+        <div class="text">
+          <h3>HOME INSURANCE</h3>
+          <p>
+            Offers protection through an annual plan or a 3-year coverage option
+            at a discounted rate.
+            <br><a href="http://appsonline.income.com.sg/OLAServices/OLAServices.aspx?Data=sGqiFhCm%252btvx1UBaXsEv2t0yl7Rc7yoa06hDbYe%252ft0UZrar%252feSPrElU4ejNF6bJEo5y8ZpjNE3FGeDNe8YK25QzZkgRPN3FbTPyMxgfkTiaiyRJRZ27UPA%253d%253d" 
+            class="btn btn-primary" 
+            target="_blank">Get Enhanced Home Insurance</a>
+          </p>
+        </div>
+      </div>
+      <div id="travel-insurance" class="insurance-row">
+        <img src="img/travel.png" alt="Airplane" />
+        <div class="text">
+          <h3>TRAVEL INSURANCE</h3>
+          <p>
+            Provides coverage for individual or group travel with choices
+            between single-trip or annual plans.
+            <br><a href="http://appsonline.income.com.sg/OLAServices/OLAServices.aspx?Data=QPyq3lYss1PiPRYSSPx1dF0uzma%252b8MGgF1dA1tOeXMdqNorgQMMjf8FB9VRqXzg0PLm40sTcs5SLyK2CcNUD2Xt3FEprxx7igJ7nJm7bDOyjiDmPvL30ig%253d%253d" 
+            class="btn btn-primary" 
+            target="_blank">Apply Now</a>
+          </p>
+        </div>
+      </div>
+      <div id="personal-accident-insurance" class="insurance-row">
+        <img src="img/injury.jpg" alt="Personal Accident Insurance showing first aid bandage" />
+        <div class="text">
+          <h3>PERSONAL ACCIDENT INSURANCE</h3>
+          <p>
+            Specifically designed for active sports personnel, with extended
+            coverage for sports equipment.
+            <br><a href="http://appsonline.income.com.sg/OLAServices/OLAServices.aspx?Data=VRKhLiTM%252b%252flcnvV3ArAxmCpHfDwz33QUBE%252fPcTPyiguZmRzoJYLST4b9d9GfNlzcAZtDx%252bwDNj%252fICO0MraqoeEMS9lNRldKXdaNSJ%252fRWcWDiiVQ7K8Zdeg%253d%253d" 
+            class="btn btn-primary" 
+            target="_blank">Apply Here</a>
+          </p>
+        </div>
+      </div>
+      <div id="domestic-helper-insurance" class="insurance-row">
+        <img src="img/domestichelper.jpg" alt="Domestic Helper Insurance showing a maid at work" />
+        <div class="text">
+          <h3>DOMESTIC HELPER INSURANCE</h3>
+          <p>
+            Includes coverage for confinement ladies, meets minimum MOM
+            requirements, and offers broader protection for domestic helpers.
+            <br><a href="contact.html" 
+            class="btn btn-primary" 
+            target="_blank">Contact Us For Details</a>
+          </p>
+        </div>
+      </div>
+      <div id="overseas-student-protection" class="insurance-row">
+        <img src="img/college.jpg" alt="Overseas Coleege" />
+        <div class="text">
+          <h3>OVERSEAS STUDENT PROTECTION COVERAGE</h3>
+          <p>
+            Ensures medical coverage for students studying or interning abroad.
+            <br><a href="contact.html" 
+            class="btn btn-primary" 
+            target="_blank">Contact Us For More Info</a>
+          </p>
+        </div>
+      </div>
+      <div id="pet-insurance" class="insurance-row">
+        <img src="img/pet.jpg" alt="Pet Insurance" />
+        <div class="text">
+          <h3>Pet Insurance</h3>
+          <p>
+            Provides coverage for your pets' medical expenses, including
+            accidents and illnesses, to ensure their health and well-being.
+            <br><a href="http://appsonline.income.com.sg/OLAServices/OLAServices.aspx?Data=BS4rAVuQXL6xoBKxfaK2g6oOwRxp3W%252f%252foEHv95%252fns5uPy9Xo0Og6hLcebp%252fQ0KFId7LzL6xITvXEbrLG15JD1I2ufkwIzcACL%252f7DoL5oosL3dMu5a8kS8g%253d%253d" 
+            class="btn btn-primary" 
+            target="_blank">Get a Quote</a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <p>&copy; 2024 KCB Agency | All Rights Reserved</p>
+  </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const rows = document.querySelectorAll(".insurance-row");
+
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.style.animation = "fadeInUp 0.8s ease forwards";
+            }
+          });
+        }, {
+          threshold: 0.1
+        });
+
+        rows.forEach(row => {
+          observer.observe(row);
+        });
+      });
+    </script>
+  </body>
+</html>
