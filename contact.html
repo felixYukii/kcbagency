@@ -30,11 +30,11 @@
             z-index: -1;
         }
 
-        .card.animated {
+        .card.animated, .info-box{
             animation: fadeInUp 0.8s ease forwards;
         }
 
-        .card:hover {
+        .card:hover{
             box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8);
         }
 
@@ -68,7 +68,7 @@
             height: 0;
             padding-bottom: 56.25%;
             overflow: hidden;
-            margin-bottom: 1.5rem; /* Add some spacing */
+            margin-bottom: 1.5rem;
         }
 
         .map-container iframe {
@@ -78,6 +78,57 @@
             width: 100%;
             height: 100%;
         }
+
+        /* Info Box Styles */
+        .info-section {
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+        }
+
+        .info-box {
+            display: flex;
+            background-color: #f9f9f9;
+            border: 2px solid black; /* Black border */
+            padding: 20px;
+            width: 100%;
+            max-width: 100%;
+            align-items: center;
+            cursor: pointer; /* Pointer cursor to indicate it's clickable */
+        }
+
+        .info-box:hover {
+            box-shadow: 0 32px 48px rgba(0, 0, 0, 0.4);
+        }
+
+        .info-logo {
+            max-width: 100px;
+            margin-right: 20px;
+        }
+
+        .info-description {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .info-description h3 {
+            margin: 0;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .info-description p {
+            margin: 5px 0 0;
+            font-size: 16px;
+            color: #555;
+        }
+
+        /* Ensure the info-box is equal to the combined width of both columns */
+        .info-wrapper {
+            margin-top: 20px;
+        }
+
     </style>
 </head>
 <body class="d-flex flex-column min-vh-100">
@@ -142,6 +193,21 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
+                </div>
+
+                <!-- Info Box Below -->
+                <div class="info-wrapper row">
+                    <div class="col-md-12">
+                        <a href="https://www.your-insurance-guy.com/" target="_blank" style="text-decoration: none;"> <!-- Make the box clickable -->
+                            <div class="info-box">
+                                <img src="img/yourInsuranceGuy.png" alt="Your Insurance Guy Logo" class="info-logo">
+                                <div class="info-description">
+                                    <h3>Your Insurance Guy</h3>
+                                    <p>Friend of KCB - specialise in corporate employee benefits and marine cargo</p>
+                                </div>
+                            </div>
+                        </a>
                     </div>
                 </div>
             </div>
